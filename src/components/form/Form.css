@@ -1,0 +1,56 @@
+.Form {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Form-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Form-field {
+    display: inline-block;
+    margin-right: 20px;
+}
+.Form-field label {
+    margin-right: 10px;
+}
+.Form-field input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.Form-field:last-child input {
+    width: 300px;
+}
+.Form-submit {
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background: #4568dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #b06ab3,
+        #4568dc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #b06ab3,
+        #4568dc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Form-submit:hover {
+    opacity: 0.8;
+}

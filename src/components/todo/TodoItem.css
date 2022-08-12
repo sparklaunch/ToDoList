@@ -1,0 +1,75 @@
+.TodoItem {
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    background: #2193b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #6dd5ed,
+        #2193b0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #6dd5ed,
+        #2193b0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.TodoItem div:not(.TodoItem div:last-child) {
+    margin-bottom: 10px;
+}
+
+.operations {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.operations button {
+    width: 45%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.operations button:hover {
+    opacity: 0.8;
+}
+
+.operations button:first-child {
+    color: white;
+    background: #c31432; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #240b36,
+        #c31432
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #240b36,
+        #c31432
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.operations button:last-child {
+    background: #1f4037; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #99f2c8,
+        #1f4037
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #99f2c8,
+        #1f4037
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

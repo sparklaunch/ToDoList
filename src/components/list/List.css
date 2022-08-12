@@ -1,0 +1,17 @@
+.List {
+    margin: 30px 0;
+}
+.List-working-title {
+    margin-bottom: 10px;
+}
+.List-done-title {
+    margin-bottom: 10px;
+}
+.List-working {
+    margin-bottom: 20px;
+    display: flex;
+}
+.List-done {
+    margin-bottom: 20px;
+    display: flex;
+}
