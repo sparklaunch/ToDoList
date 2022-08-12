@@ -18,7 +18,17 @@ function TodoItem({
     cancelTodo: Function;
 }) {
     return (
-        <div className="TodoItem">
+        <div
+            className="TodoItem"
+            style={
+                isDone
+                    ? {
+                          background:
+                              "linear-gradient(to right, #dd3e54, #6be585)"
+                      }
+                    : {}
+            }
+        >
             <div className="title">
                 <h3>{title}</h3>
             </div>
@@ -33,6 +43,7 @@ function TodoItem({
                 </button>
                 {isDone ? (
                     <button
+                        className="cancel-button"
                         onClick={() => {
                             cancelTodo(id);
                         }}
@@ -41,6 +52,7 @@ function TodoItem({
                     </button>
                 ) : (
                     <button
+                        className="complete-button"
                         onClick={() => {
                             completeTodo(id);
                         }}
